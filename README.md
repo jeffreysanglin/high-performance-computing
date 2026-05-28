@@ -1,4 +1,4 @@
-# Optimizing KNN + Cosine Similarity with HPC
+# HPC: Optimizing KNN + Cosine Similarity
 
 This project explores how much performance can improve when a familiar data science workflow is rewritten for high-performance computing.
 
