@@ -1,0 +1,231 @@
+My NetID:             jea396
+Job ID:               107770
+Job name is:          distance
+Job submitted from:   /shared/home/jea396/project-jea396/part_4
+Date:                 2026-05-06 06:23 UTC
+
+
+-- The CXX compiler identification is GNU 14.3.0
+-- The CUDA compiler identification is NVIDIA 12.8.93 with host compiler GNU 14.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050-gpu/.spack-env/view/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /usr/local/cuda-12.8/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Looking for sgemm_
+-- Looking for sgemm_ - not found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for sgemm_
+-- Looking for sgemm_ - found
+-- Found BLAS: /usr/lib64/libflexiblas.so
+-- Configuring done (34.6s)
+-- Generating done (0.5s)
+-- Build files have been written to: /shared/home/jea396/project-jea396/part_4/build_t16
+[ 33%] Building CUDA object CMakeFiles/distance.dir/distance.cu.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 66%] Linking CUDA device code CMakeFiles/distance.dir/cmake_device_link.o
+[100%] Linking CUDA executable distance
+[100%] Built target distance
+STRONG SCALING=====================
+===================================
+
+==============================
+STRONG: block_size=64, rows=1000, dims=256, TILE_SIZE=16
+==============================
+block_size: 64
+rows:       1000
+dims:       256
+CUDA Tiled KNN: 1042.46 us
+Correctness Check PASSED.
+==============================
+STRONG: block_size=128, rows=1000, dims=256, TILE_SIZE=16
+==============================
+block_size: 128
+rows:       1000
+dims:       256
+CUDA Tiled KNN: 1134.78 us
+Correctness Check PASSED.
+==============================
+STRONG: block_size=256, rows=1000, dims=256, TILE_SIZE=16
+==============================
+block_size: 256
+rows:       1000
+dims:       256
+CUDA Tiled KNN: 1360.54 us
+Correctness Check PASSED.
+==============================
+STRONG: block_size=512, rows=1000, dims=256, TILE_SIZE=16
+==============================
+block_size: 512
+rows:       1000
+dims:       256
+CUDA Tiled KNN: 1722.3 us
+Correctness Check PASSED.
+==============================
+STRONG: block_size=1024, rows=1000, dims=256, TILE_SIZE=16
+==============================
+block_size: 1024
+rows:       1000
+dims:       256
+CUDA Tiled KNN: 2246.62 us
+Correctness Check PASSED.
+Weak SCALING=====================
+===================================
+
+==============================
+WEAK: scale=1, block_size=256, rows=1000, dims=256, TILE_SIZE=16
+==============================
+block_size: 256
+rows:       1000
+dims:       256
+CUDA Tiled KNN: 1363.14 us
+Correctness Check PASSED.
+==============================
+WEAK: scale=2, block_size=256, rows=1414, dims=256, TILE_SIZE=16
+==============================
+block_size: 256
+rows:       1414
+dims:       256
+CUDA Tiled KNN: 2289.92 us
+Correctness Check PASSED.
+==============================
+WEAK: scale=4, block_size=256, rows=2000, dims=256, TILE_SIZE=16
+==============================
+block_size: 256
+rows:       2000
+dims:       256
+CUDA Tiled KNN: 3862.4 us
+Correctness Check PASSED.
+==============================
+WEAK: scale=8, block_size=256, rows=2828, dims=256, TILE_SIZE=16
+==============================
+block_size: 256
+rows:       2828
+dims:       256
+CUDA Tiled KNN: 7003.49 us
+Correctness Check PASSED.
+==============================
+WEAK: scale=16, block_size=256, rows=4000, dims=256, TILE_SIZE=16
+==============================
+block_size: 256
+rows:       4000
+dims:       256
+CUDA Tiled KNN: 13393.3 us
+Correctness Check PASSED.
+CUDA CONFIGURATION SCALING=====================
+===================================
+-- The CXX compiler identification is GNU 14.3.0
+-- The CUDA compiler identification is NVIDIA 12.8.93 with host compiler GNU 14.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050-gpu/.spack-env/view/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /usr/local/cuda-12.8/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Looking for sgemm_
+-- Looking for sgemm_ - not found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for sgemm_
+-- Looking for sgemm_ - found
+-- Found BLAS: /usr/lib64/libflexiblas.so
+-- Configuring done (10.8s)
+-- Generating done (0.5s)
+-- Build files have been written to: /shared/home/jea396/project-jea396/part_4/build_t8
+[ 33%] Building CUDA object CMakeFiles/distance.dir/distance.cu.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 66%] Linking CUDA device code CMakeFiles/distance.dir/cmake_device_link.o
+[100%] Linking CUDA executable distance
+[100%] Built target distance
+==============================
+TILE_SIZE=8, BLOCK_SIZE=256, rows=1000, dims=256
+==============================
+block_size: 256
+rows:       1000
+dims:       256
+CUDA Tiled KNN: 1042.72 us
+Correctness Check PASSED.
+-- The CXX compiler identification is GNU 14.3.0
+-- The CUDA compiler identification is NVIDIA 12.8.93 with host compiler GNU 14.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050-gpu/.spack-env/view/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /usr/local/cuda-12.8/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Looking for sgemm_
+-- Looking for sgemm_ - not found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for sgemm_
+-- Looking for sgemm_ - found
+-- Found BLAS: /usr/lib64/libflexiblas.so
+-- Configuring done (10.7s)
+-- Generating done (0.5s)
+-- Build files have been written to: /shared/home/jea396/project-jea396/part_4/build_t16
+[ 33%] Building CUDA object CMakeFiles/distance.dir/distance.cu.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 66%] Linking CUDA device code CMakeFiles/distance.dir/cmake_device_link.o
+[100%] Linking CUDA executable distance
+[100%] Built target distance
+==============================
+TILE_SIZE=16, BLOCK_SIZE=256, rows=1000, dims=256
+==============================
+block_size: 256
+rows:       1000
+dims:       256
+CUDA Tiled KNN: 1362.75 us
+Correctness Check PASSED.
+-- The CXX compiler identification is GNU 14.3.0
+-- The CUDA compiler identification is NVIDIA 12.8.93 with host compiler GNU 14.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050-gpu/.spack-env/view/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /usr/local/cuda-12.8/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Looking for sgemm_
+-- Looking for sgemm_ - not found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for sgemm_
+-- Looking for sgemm_ - found
+-- Found BLAS: /usr/lib64/libflexiblas.so
+-- Configuring done (10.7s)
+-- Generating done (0.5s)
+-- Build files have been written to: /shared/home/jea396/project-jea396/part_4/build_t32
+[ 33%] Building CUDA object CMakeFiles/distance.dir/distance.cu.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 66%] Linking CUDA device code CMakeFiles/distance.dir/cmake_device_link.o
+[100%] Linking CUDA executable distance
+[100%] Built target distance
+==============================
+TILE_SIZE=32, BLOCK_SIZE=256, rows=1000, dims=256
+==============================
+block_size: 256
+rows:       1000
+dims:       256
+CUDA Tiled KNN: 3136.38 us
+Correctness Check PASSED.

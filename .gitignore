@@ -1,0 +1,89 @@
+# =========================
+# Build Directories
+# =========================
+build/
+cmake-build-*/
+dist/
+out/
+# =========================
+# CMake Files
+# =========================
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+CTestTestfile.cmake
+# =========================
+# Compiled Binaries / Libraries
+# =========================
+*.o
+*.obj
+*.so
+*.pyd
+*.dll
+*.dylib
+*.a
+*.lib
+*.exe
+# =========================
+# Python Cache / Virtual Env
+# =========================
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+venv/
+env/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# IDE / Editor Files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Local Benchmark / Output Files
+# =========================
+*.csv
+*.log
+*.prof
+
+# =========================
+# Ignore vendored pybind11 build artifacts only
+# =========================
+pybind11/build/
+pybind11/CMakeFiles/
+*.pybind11
+**/pybind11/
+
+# =========================
+# Ignore vendored pykokkos build artifacts only
+# =========================
+pykokkos/build/
+pykokkos
+*.pykokkos
+**/pykokkos/
+
+# =========================
+# VTune
+# =========================
+vtune_hotspots*
+*.vtune
+*.vtune.*
+*.amplxe
+*.amplxe.*

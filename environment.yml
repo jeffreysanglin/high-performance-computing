@@ -1,0 +1,23 @@
+name: project-jea396
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+
+  # Python computations
+  - numpy>=2.4
+  - scipy>=1.17
+  - scikit-learn>=1.8
+
+  # MPI bindings
+  - mpi4py>=4.1
+
+  # C++ / pybind
+  - cmake
+  - ninja
+  - make
+  - pkg-config
+  - pybind11
+
+  # Pip
+  - pip

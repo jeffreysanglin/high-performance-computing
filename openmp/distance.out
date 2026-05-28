@@ -1,0 +1,239 @@
+My NetID:             jea396
+Job ID:               107816
+Job name is:          distance
+Job submitted from:   /shared/home/jea396/project-jea396/part_2
+Date:                 2026-05-06 08:12 UTC
+
+
+How many CPUs on this node?     48
+How many tasks did I request?   1
+PROFILE:              0
+
+
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/share/cmake/pybind11/FindPythonLibsNew.cmake:101 (message):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning, or
+  preferably upgrade to using FindPython, either by calling it explicitly
+  before pybind11, or by setting PYBIND11_FINDPYTHON ON before pybind11.
+Call Stack (most recent call first):
+  /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/share/cmake/pybind11/pybind11Tools.cmake:44 (find_package)
+  /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/share/cmake/pybind11/pybind11Common.cmake:226 (include)
+  /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/share/cmake/pybind11/pybind11Config.cmake:257 (include)
+  CMakeLists.txt:8 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PythonInterp: /shared/home/jea396/cs2050env/bin/python (found suitable version "3.12.12", minimum required is "3.8")
+-- Found PythonLibs: /shared/courseSharedFolders/161588outer/161588/spack/opt/spack/linux-cascadelake/python-3.12.12-zrtlhx75zelxclrzhcjl5r25bdkp774g/lib/libpython3.12.so
+-- Performing Test HAS_FLTO_AUTO
+-- Performing Test HAS_FLTO_AUTO - Success
+-- Found pybind11: /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/include (found version "3.0.1")
+-- Looking for sgemm_
+-- Looking for sgemm_ - not found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for sgemm_
+-- Looking for sgemm_ - found
+-- Found BLAS: /usr/lib64/libflexiblas.so
+-- Configuring done (8.4s)
+-- Generating done (0.8s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    Python_EXECUTABLE
+
+
+-- Build files have been written to: /shared/home/jea396/project-jea396/part_2/build
+[ 16%] Building CXX object CMakeFiles/distance_core.dir/source/distance_core.cpp.o
+[ 33%] Linking CXX static library libdistance_core.a
+[ 33%] Built target distance_core
+[ 50%] Building CXX object CMakeFiles/distance_py.dir/source/distance_bindings.cpp.o
+[ 66%] Linking CXX shared module distance_py.cpython-312-x86_64-linux-gnu.so
+[ 66%] Built target distance_py
+[ 83%] Building CXX object CMakeFiles/distance_profile.dir/source/distance_main.cpp.o
+[100%] Linking CXX executable distance_profile
+[100%] Built target distance_profile
+STRONG SCALING=====================
+===================================
+
+==============================
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+==============================
+Metric used:  cosine
+Are the results correct?
+similarity--------------
+True
+[Scikit] Time per evaluation:      13247 microseconds.
+[C++] Time per evaluation:       9013 microseconds.
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      19018 microseconds.
+[C++] Time per evaluation:      13513 microseconds.
+
+==============================
+OMP_NUM_THREADS=2
+OPENBLAS_NUM_THREADS=2
+==============================
+Metric used:  cosine
+Are the results correct?
+similarity--------------
+True
+[Scikit] Time per evaluation:      14337 microseconds.
+[C++] Time per evaluation:       8995 microseconds.
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      19004 microseconds.
+[C++] Time per evaluation:      13902 microseconds.
+
+==============================
+OMP_NUM_THREADS=4
+OPENBLAS_NUM_THREADS=4
+==============================
+Metric used:  cosine
+Are the results correct?
+similarity--------------
+True
+[Scikit] Time per evaluation:      10486 microseconds.
+[C++] Time per evaluation:       5441 microseconds.
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      12050 microseconds.
+[C++] Time per evaluation:      10481 microseconds.
+
+==============================
+OMP_NUM_THREADS=8
+OPENBLAS_NUM_THREADS=8
+==============================
+Metric used:  cosine
+Are the results correct?
+similarity--------------
+True
+[Scikit] Time per evaluation:       8631 microseconds.
+[C++] Time per evaluation:       3753 microseconds.
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:       9842 microseconds.
+[C++] Time per evaluation:       8865 microseconds.
+
+==============================
+OMP_NUM_THREADS=16
+OPENBLAS_NUM_THREADS=16
+==============================
+Metric used:  cosine
+Are the results correct?
+similarity--------------
+True
+[Scikit] Time per evaluation:       7601 microseconds.
+[C++] Time per evaluation:       2931 microseconds.
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      10170 microseconds.
+[C++] Time per evaluation:       8052 microseconds.
+
+WEAK SCALING=====================
+===================================
+
+==============================
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+ROW_COUNT=1000
+==============================
+Metric used:  cosine
+Are the results correct?
+similarity--------------
+True
+[Scikit] Time per evaluation:      13316 microseconds.
+[C++] Time per evaluation:       8979 microseconds.
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      18955 microseconds.
+[C++] Time per evaluation:      13512 microseconds.
+
+==============================
+OMP_NUM_THREADS=2
+OPENBLAS_NUM_THREADS=2
+ROW_COUNT=1414
+==============================
+Metric used:  cosine
+Are the results correct?
+similarity--------------
+True
+[Scikit] Time per evaluation:      28618 microseconds.
+[C++] Time per evaluation:      17688 microseconds.
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      33763 microseconds.
+[C++] Time per evaluation:      25685 microseconds.
+
+==============================
+OMP_NUM_THREADS=4
+OPENBLAS_NUM_THREADS=4
+ROW_COUNT=2000
+==============================
+Metric used:  cosine
+Are the results correct?
+similarity--------------
+True
+[Scikit] Time per evaluation:      42768 microseconds.
+[C++] Time per evaluation:      22729 microseconds.
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      36042 microseconds.
+[C++] Time per evaluation:      35368 microseconds.
+
+==============================
+OMP_NUM_THREADS=8
+OPENBLAS_NUM_THREADS=8
+ROW_COUNT=2828
+==============================
+Metric used:  cosine
+Are the results correct?
+similarity--------------
+True
+[Scikit] Time per evaluation:      89851 microseconds.
+[C++] Time per evaluation:      72520 microseconds.
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      45800 microseconds.
+[C++] Time per evaluation:      93460 microseconds.
+
+==============================
+OMP_NUM_THREADS=16
+OPENBLAS_NUM_THREADS=16
+ROW_COUNT=4000
+==============================
+Metric used:  cosine
+Are the results correct?
+similarity--------------
+True
+[Scikit] Time per evaluation:     146664 microseconds.
+[C++] Time per evaluation:     127455 microseconds.
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      46975 microseconds.
+[C++] Time per evaluation:     164103 microseconds.
+

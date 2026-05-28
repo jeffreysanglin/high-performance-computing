@@ -1,0 +1,295 @@
+My NetID:             jea396
+Job ID:               107726
+Job name is:          distance
+Job submitted from:   /shared/home/jea396/project-jea396/part_3
+Date:                 2026-05-06 05:27 UTC
+
+
+How many CPUs on this node?     48
+How many tasks did I request?   48
+PROFILE:              0
+
+
+PATH=/shared/home/jea396/cs2050env/bin:/shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/bin:/shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/vtune/2024.3/bin64:/shared/courseSharedFolders/161588outer/161588/julia/julia-1.12.5/bin:/shared/courseSharedFolders/161588outer/161588/challenges/intake/public_scripts:/shared/home/jea396/161588/spack/bin:/opt/amazon/openmpi/bin:/opt/amazon/efa/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin:/opt/aws/bin:/opt/parallelcluster/pyenv/versions/3.12.11/envs/awsbatch_virtualenv/bin:/opt/slurm/bin
+which python: /shared/home/jea396/cs2050env/bin/python
+which cmake:  /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/bin/cmake
+which c++:    /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/bin/c++
+/shared/home/jea396/cs2050env/bin/python
+3.12.12 (main, Feb  2 2026, 21:01:13) [GCC 14.3.0]
+-- The CXX compiler identification is GNU 14.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_CXX: /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/lib/libmpi.so (found version "3.1")
+-- Found MPI: TRUE (found version "3.1")
+-- Looking for sgemm_
+-- Looking for sgemm_ - not found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for sgemm_
+-- Looking for sgemm_ - found
+-- Found BLAS: /usr/lib64/libflexiblas.so
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+CMake Warning (dev) at /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/share/cmake/pybind11/FindPythonLibsNew.cmake:101 (message):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning, or
+  preferably upgrade to using FindPython, either by calling it explicitly
+  before pybind11, or by setting PYBIND11_FINDPYTHON ON before pybind11.
+Call Stack (most recent call first):
+  /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/share/cmake/pybind11/pybind11Tools.cmake:44 (find_package)
+  /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/share/cmake/pybind11/pybind11Common.cmake:226 (include)
+  /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/share/cmake/pybind11/pybind11Config.cmake:257 (include)
+  CMakeLists.txt:11 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PythonInterp: /shared/home/jea396/cs2050env/bin/python (found suitable version "3.12.12", minimum required is "3.8")
+-- Found PythonLibs: /shared/courseSharedFolders/161588outer/161588/spack/opt/spack/linux-cascadelake/python-3.12.12-zrtlhx75zelxclrzhcjl5r25bdkp774g/lib/libpython3.12.so
+-- Performing Test HAS_FLTO_AUTO
+-- Performing Test HAS_FLTO_AUTO - Success
+-- Found pybind11: /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/include (found version "3.0.1")
+-- Configuring done (12.9s)
+CMake Warning at /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/share/cmake/pybind11/pybind11Tools.cmake:159 (add_library):
+  Cannot generate a safe runtime search path for target distance_py because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libgomp.so.1] in /shared/courseSharedFolders/161588outer/161588/spack/opt/spack/linux-cascadelake/gcc-14.3.0-yugybpay7kr2m3ybgxwzlbdmbzdqhcv3/lib64 may be hidden by files in:
+      /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  CMakeLists.txt:14 (pybind11_add_module)
+
+
+CMake Warning at CMakeLists.txt:16 (add_executable):
+  Cannot generate a safe runtime search path for target distance_profile
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libgomp.so.1] in /shared/courseSharedFolders/161588outer/161588/spack/opt/spack/linux-cascadelake/gcc-14.3.0-yugybpay7kr2m3ybgxwzlbdmbzdqhcv3/lib64 may be hidden by files in:
+      /shared/courseSharedFolders/161588outer/161588/spack/var/spack/environments/CS-2050/.spack-env/view/lib
+
+  Some of these libraries may not be found correctly.
+
+
+-- Generating done (0.7s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    Python_EXECUTABLE
+
+
+-- Build files have been written to: /shared/home/jea396/project-jea396/part_3/build
+[ 25%] Building CXX object CMakeFiles/distance_py.dir/source/distance_bindings.cpp.o
+[ 50%] Linking CXX shared module distance_py.cpython-312-x86_64-linux-gnu.so
+[ 50%] Built target distance_py
+[ 75%] Building CXX object CMakeFiles/distance_profile.dir/source/distance_main.cpp.o
+[100%] Linking CXX executable distance_profile
+[100%] Built target distance_profile
+STRONG SCALING=====================
+===================================
+
+==============================
+MPI tasks=1
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 1
+==============================
+Metric used:  cosine
+Are the results correct?
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      19000 microseconds.
+[C++] Time per evaluation:      20770 microseconds.
+
+==============================
+MPI tasks=2
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 2
+==============================
+Metric used:  cosine
+Are the results correct?
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      29062 microseconds.
+[C++] Time per evaluation:      13618 microseconds.
+
+==============================
+MPI tasks=4
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 4
+==============================
+Metric used:  cosine
+Are the results correct?
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      29127 microseconds.
+[C++] Time per evaluation:       6954 microseconds.
+
+==============================
+MPI tasks=8
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 8
+==============================
+Metric used:  cosine
+Are the results correct?
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      29011 microseconds.
+[C++] Time per evaluation:       4032 microseconds.
+
+==============================
+MPI tasks=16
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 16
+==============================
+Metric used:  cosine
+Are the results correct?
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      29077 microseconds.
+[C++] Time per evaluation:       2529 microseconds.
+
+==============================
+MPI tasks=24
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 24
+==============================
+Metric used:  cosine
+Are the results correct?
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      29144 microseconds.
+[C++] Time per evaluation:       2056 microseconds.
+
+==============================
+MPI tasks=48
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 48
+==============================
+Metric used:  cosine
+Are the results correct?
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      29453 microseconds.
+[C++] Time per evaluation:       2027 microseconds.
+
+WEAK SCALING=====================
+===================================
+
+==============================
+MPI tasks=1
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 1
+==============================
+Metric used:  cosine
+Are the results correct?
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      19137 microseconds.
+[C++] Time per evaluation:      21199 microseconds.
+
+==============================
+MPI tasks=2
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 2
+==============================
+Metric used:  cosine
+Are the results correct?
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      53870 microseconds.
+[C++] Time per evaluation:      34558 microseconds.
+
+==============================
+MPI tasks=4
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 4
+==============================
+Metric used:  cosine
+Are the results correct?
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:      97927 microseconds.
+[C++] Time per evaluation:      35870 microseconds.
+
+==============================
+MPI tasks=8
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 8
+==============================
+Metric used:  cosine
+Are the results correct?
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:     191330 microseconds.
+[C++] Time per evaluation:      36265 microseconds.
+
+==============================
+MPI tasks=16
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 16
+==============================
+Metric used:  cosine
+Are the results correct?
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:     374371 microseconds.
+[C++] Time per evaluation:      38696 microseconds.
+
+==============================
+MPI tasks=24
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 24
+==============================
+Metric used:  cosine
+Are the results correct?
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:     545252 microseconds.
+[C++] Time per evaluation:      40212 microseconds.
+
+==============================
+MPI tasks=48
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 48
+==============================
+Metric used:  cosine
+Are the results correct?
+knn---------------------
+Score Matrices: True
+Index Matrices: True
+[Scikit] Time per evaluation:    1104130 microseconds.
+[C++] Time per evaluation:      61346 microseconds.
+

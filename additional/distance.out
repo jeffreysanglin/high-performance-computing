@@ -1,0 +1,170 @@
+My NetID:             jea396
+Job ID:               106340
+Job name is:          distance
+Job submitted from:   /shared/home/jea396/project-jea396/part_5
+Date:                 2026-05-05 06:09 UTC
+
+
+How many CPUs on this node?     48
+How many tasks did I request?   48
+PROFILE:              0
+
+
+STRONG SCALING=====================
+===================================
+==============================
+MPI tasks=1
+ROW_COUNT=1000
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 1
+==============================
+Score Matrices: True
+Index Matrices: True
+time: 25437.208000000002 us
+
+==============================
+MPI tasks=2
+ROW_COUNT=1000
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 2
+==============================
+Score Matrices: True
+Index Matrices: True
+time: 27811.311999999998 us
+
+==============================
+MPI tasks=4
+ROW_COUNT=1000
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 4
+==============================
+Score Matrices: True
+Index Matrices: True
+time: 16408.536999999993 us
+
+==============================
+MPI tasks=8
+ROW_COUNT=1000
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 8
+==============================
+Score Matrices: True
+Index Matrices: True
+time: 10434.288999999986 us
+
+==============================
+MPI tasks=16
+ROW_COUNT=1000
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 16
+==============================
+Score Matrices: True
+Index Matrices: True
+time: 8080.414000000008 us
+
+==============================
+MPI tasks=24
+ROW_COUNT=1000
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 24
+==============================
+Score Matrices: True
+Index Matrices: True
+time: 8112.634999999993 us
+
+==============================
+MPI tasks=48
+ROW_COUNT=1000
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 48
+==============================
+Score Matrices: True
+Index Matrices: True
+time: 10424.502000000002 us
+
+WEAK SCALING=======================
+===================================
+==============================
+MPI tasks=1
+ROW_COUNT=1000
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 1
+==============================
+Score Matrices: True
+Index Matrices: True
+time: 25261.891000000003 us
+
+==============================
+MPI tasks=2
+ROW_COUNT=1414
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 2
+==============================
+Score Matrices: True
+Index Matrices: True
+time: 41487.039000000004 us
+
+==============================
+MPI tasks=4
+ROW_COUNT=2000
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 4
+==============================
+Score Matrices: True
+Index Matrices: True
+time: 43121.223 us
+
+==============================
+MPI tasks=8
+ROW_COUNT=2828
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 8
+==============================
+Score Matrices: True
+Index Matrices: True
+time: 47146.32599999999 us
+
+==============================
+MPI tasks=16
+ROW_COUNT=4000
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 16
+==============================
+Score Matrices: True
+Index Matrices: True
+time: 53802.295 us
+
+==============================
+MPI tasks=24
+ROW_COUNT=4898
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 24
+==============================
+Score Matrices: True
+Index Matrices: True
+time: 63298.537999999986 us
+
+==============================
+MPI tasks=48
+ROW_COUNT=6928
+OMP_NUM_THREADS=1
+OPENBLAS_NUM_THREADS=1
+Total cores used: 48
+==============================
+Score Matrices: True
+Index Matrices: True
+time: 117178.51399999998 us
+
